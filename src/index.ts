@@ -1,4 +1,4 @@
-import { StocksService } from './src/application/stocks.service'
+import { StocksService } from './application/stocks.service'
 
 const handler = async (event) => {
     StocksService

@@ -8,7 +8,7 @@
         "esModuleInterop": true,
         "baseUrl": ".",
         "outDir": "build",
-        "rootDir": "./src",
+        "rootDir": "./",
         "paths": {
             "@shared/*": [
                 "./src/shared/*"
@@ -35,6 +35,7 @@
         "src/**/*"
     ],
     "exclude": [
+        "build",
         "node_modules",
         "jest.config.js",
         ".eslintrc.js"
