@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "types": [
+            "jest",
+            "node"
+        ],
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "build",
+        "rootDir": "./src",
+        "paths": {
+            "@shared/*": [
+                "./src/shared/*"
+            ],
+            "@infrastructure/*": [
+                "./src/infrastructure/*"
+            ],
+            "@domain/*": [
+                "./src/domain/*"
+            ],
+            "@application/*": [
+                "./src/application/*"
+            ]
+        },
+        "sourceMap": true,
+        "plugins": [
+            {
+                "transform": "ts-auto-mock/transformer",
+                "cacheBetweenTests": false
+            }
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "jest.config.js",
+        ".eslintrc.js"
+    ]
+}

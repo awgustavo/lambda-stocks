@@ -1,0 +1,39 @@
+{
+  "name": "lambda-stocks",
+  "version": "0.0.1",
+  "description": "Lambda API Input",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "jest": "^29.2.1",
+    "jest-ts-auto-mock": "^2.1.0",
+    "ts-auto-mock": "^3.6.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register ./src/application/server.ts",
+    "dev": "npm run code-lint && npm test && ts-node-dev -r tsconfig-paths/register ./src/application/server.ts",
+    "test": "jest --coverage",
+    "lint:fix": "eslint --ext .ts . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awgustavo/lambda-stocks.git"
+  },
+  "author": "andre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awgustavo/lambda-stocks/issues"
+  },
+  "homepage": "https://github.com/awgustavo/lambda-stocks#readme"
+}
