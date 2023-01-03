@@ -1,6 +1,6 @@
 export class StocksService {
     
     validate() {
-        return true;
+        return true
     }
 }
