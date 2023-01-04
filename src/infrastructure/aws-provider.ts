@@ -20,9 +20,9 @@ export class AWSProvider<TMessageType> {
 
     private parseMessage(message: TMessageType, sqsURL: string): AWS.SQS.SendMessageRequest {
         return {
-            DelaySeconds: 10,
+            DelaySeconds: 0,
             MessageBody: JSON.stringify(message),
-            QueueUrl: sqsURL
+            QueueUrl: sqsURL,
         }
     }
 }
