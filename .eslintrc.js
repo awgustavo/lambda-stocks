@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: ['@typescript-eslint'],
     rules: {
+        '@typescript-eslint/no-empty-function': 'off',
         'arrow-spacing': 'error',
         'indent': ['error', 4],
         'keyword-spacing': ['error'],
@@ -23,6 +24,7 @@ module.exports = {
         'nonblock-statement-body-position': 'error',
         'no-confusing-arrow': 'error',
         'no-duplicate-imports': 'error',
+        'no-empty-function': 'off',
         'no-var': 'error',
         'object-curly-spacing': ['error', 'always'],
         'object-shorthand': 'off',
